@@ -98,5 +98,5 @@ body {
   }
 
   a {
-    text-decoration: none; // removes the underline
+    text-decoration: none; /* removes the underline */
   }
