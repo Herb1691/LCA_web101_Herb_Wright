@@ -2,13 +2,55 @@
 */
 
 /* Give the <body> element a background of #bdc3c7*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #bdc3c7;
+    height: 100vh;
+    width: 90vw;
+  }
 
+header {
+display: grid;
+grid-template-columns: 40% 60%;
+width: 100%;
+}
+
+nav > a {
+    margin: 2% 1% 3%;
+    height: 10%;
+    width: 15%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 20px; 
+    text-align: center;
+    border: 2px solid white;
+    text-decoration: none; /* removes the underline */
+  }
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+  }
 
 /* Make the <h1> element #9b59b6*/
-
+h1 {
+    color:#9b59b6;
+    grid-column: 2/3;
+    margin: 1% auto;
+    border-bottom: 2px solid #1940A9;;
+  }
 
 /* Make all <h2> elements orange */
-
+h2 {
+    color:orange;
+    grid-column: 2/3;
+    margin: 1% auto;
+    border-bottom: 2px solid #1940A9;;
+  }
 
 /* Make all <li> elements blue(pick your own hexadecimal blue)*/ 
 
