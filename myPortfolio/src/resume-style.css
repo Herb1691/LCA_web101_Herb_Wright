@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: url("../images/backgrounds/MarioPipe.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+    height: 100vh;
+    width: 90vw;
+  }
+  main{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    background-image: url("../images/backgrounds/MarioPipe.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    background-origin: padding-box;
+  }
+
+  header > nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+    height: 25%;
+    grid-column: 2/2;
+  }
+
+  header > nav > div > p{
+      width: 75%;
+      height: 75%;
+      grid-column: 2/2;
+  }
+
+  /*nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+  }*/
+
+  header > #profile-pic{
+    width: 80%;
+    height: auto;
+    /*margin: 15% auto;*/
+    float: left;
+    grid-column: 1/2;
+    background-color: black;
+    border-style: solid;
+    border-radius: 50%;     
+  }
+
+  header > nav > div > a {
+    margin: 2% 1% 3%;
+    height: 10%;
+    width: 15%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: whitesmoke;
+    padding: 20px; 
+    text-align: center;
+    border: 2px solid black;
+    text-decoration: none;
+  }
+
+  /*#profile-pic {
+    width: 70%;
+    height: 90%;
+    margin: 20% 5%;
+    background-color: black;
+    border-style: solid;
+    border-radius: 50%;
+  }*/
+
+
