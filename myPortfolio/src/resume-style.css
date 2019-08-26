@@ -95,7 +95,7 @@ header {
   }
 
   #mainSection {
-    background-color: grey;
+    background-color: #bdc3c7;
     display: flex;
     grid-template-columns: 20% 60% 20%;
     width: 100%;  
@@ -130,20 +130,18 @@ header {
   }
 
   #mainSection > #workExperience {
-    display: flex;
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
-    background: #bdc3c7;
+    background: grey;
     padding: 20px
   }
 
   #mainSection > #awards {
-    display: flex;
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
-    background: #bdc3c7;
+    background: gray;
     padding: 20px
   }
 
