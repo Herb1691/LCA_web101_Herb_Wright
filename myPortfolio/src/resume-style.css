@@ -1,87 +1,130 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /*background-image: url("../images/backgrounds/MarioPipe.png");
+    background-image: url("../images/backgrounds/MarioPipe.png");
+    background-color: slategrey;
     background-repeat: no-repeat;
-    background-size: 100% 100%;*/
+    background-size: 100% 100%;
     height: 100vh;
     width: 90vw;
   }
 
-  main{
-    height: 80%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    background-image: url("../images/backgrounds/MarioPipe.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+header {
+  display: flex;
+  grid-template-columns: 30% 60% 10%;
+  width: 100%;
+  background: transparent;
   }
 
-  header {
-    display: grid;
-    grid-template-columns: 25% 75%;
-    width: 100%;
-    border-style: solid;
-    border-radius: 0%;     
-  }
-
-  header > nav{
-    /*display: flex;
-    justify-content: flex-end;*/
-    display: grid;
-    width: 75%;
-    height: 25%;
-    grid-column: 2/3;
-  }
-
-  header > nav > div > p{
-      display: grid;
-      width: 75%;
-      height: 75%;
-      grid-column: 3/3;
-  }
-
-  /*nav {
+  header > img {
     display: flex;
-    justify-content: flex-end;
-    width: 80%;
-  }*/
-
-  header > #profile-pic{
-    display: grid;
-    width: 80%;
-    height: auto;
-    /*margin: 15% auto;*/
-    float: left;
-    grid-column: 1/3;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 20%;
+    height: 50%;
+    margin-bottom: 3% 10%;
     background-color: black;
     border-style: solid;
-    border-radius: 50%;     
+    border-radius: 50%;
+    padding: 20px;
+    justify-content: flex-start;
   }
 
-  header > nav > div > a {
+  /*header > div {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    display: flex;
+    grid-template-rows: 20% 80%;
+    height: 100%;
+  }*/
+
+  header > div > h1 {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;  
+  }
+
+  header > div > article{
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: darkgrey;
+    display: flex;
+    justify-content: center;
+  }
+
+  /*header > nav {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    /*background: #ccc;*/
+    /*padding: 10px;  
+    display: flex;
+    justify-content: flex-end;
+  }*/
+  
+  header > nav > a {
     margin: 2% 1% 3%;
     height: 10%;
-    width: 15%;
+    width: fit-content;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     border-radius: 25px;
-    background: whitesmoke;
+    background: transparent;
     padding: 20px; 
     text-align: center;
     border: 2px solid black;
-    text-decoration: none;
+    text-decoration: none; /* removes the underline */
+    display: flex;
+    justify-content: flex-end;
   }
 
-  /*#profile-pic {
-    width: 70%;
-    height: 90%;
-    margin: 20% 5%;
-    background-color: black;
-    border-style: solid;
-    border-radius: 50%;
+  #mainSection {
+    background-color: grey;
+  }
+
+  #mainSection > nav {
+    display: flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #bdc3c7;
+    padding: 20px
+  }
+
+  /*#mainSection > #workExperience {
+    display: flex;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    background: #bdc3c7;
+    padding: 20px
+  }
+
+  #mainSection > #awards {
+    display: flex;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    background: #bdc3c7;
+    padding: 20px
   }*/
+
 
   /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
   @media (max-width: 600px) {
