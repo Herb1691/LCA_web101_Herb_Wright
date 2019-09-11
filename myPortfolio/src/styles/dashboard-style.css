@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* CSS Variables */
 :root {
     --primary: #ddd;
@@ -210,3 +211,205 @@
         'calendar calendar calculator'
         'calendar calendar calculator';
     }
+=======
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  ul {list-style-type: none;}
+
+body {
+    font-family: Verdana, sans-serif;
+    height: 200vh;
+    width: 90vw;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "calculator"
+    "calendar";
+    /*grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 25% 25% 25% 25%;*/
+  }
+
+  main {
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  header {
+      grid-column: 2/4;
+      grid-row: 1/4;
+      text-align: center;
+      grid-area: header;
+  }
+
+  .calculator {
+    display: grid;
+    grid-column: 2/2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%, -50%);*/
+    width: 400px;
+    grid-area: calculator;
+  }
+
+  .calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+
+  button {
+    height: 60px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #333;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+    text-shadow: 0 1px rgba(255,255,255,.4);
+  }
+  
+  button:hover {
+    background-color: #eaeaea;
+  }
+  
+  .operator {
+    color: #337cac;
+  }
+  
+  .all-clear {
+    background-color: #f0595f;
+    border-color: #b0353a;
+    color: #fff;
+  }
+  
+  .all-clear:hover {
+    background-color: #f17377;
+  }
+  
+  .equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+    height: 100%;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+  
+  .equal-sign:hover {
+    background-color: #4e9ed4;
+  }
+
+  .calculator-keys {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+      padding: 20px;
+  }
+
+  .calendar {
+      display: grid;
+      grid-column: 1/2;
+      /*grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      border: 10% solid #ccc;
+      border-radius: 20%;*/
+      width: 100%;
+      height: 10%;
+  }
+  
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+  
+.month > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month > ul > li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month > .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  /* Next button */
+  .month > .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  /* Weekdays (Mon-Sun) */
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+  }
+  
+  .weekdays > li {
+    display: inline-block;
+    width: 13.6%;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Days (1-31) */
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .days > li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  /* Highlight the "current" day */
+  .days > li > .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+  }
+>>>>>>> 234383203e7965be34844c50da3732b2bc06bd18
