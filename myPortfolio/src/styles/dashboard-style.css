@@ -1,6 +1,16 @@
+/* CSS Variables */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
   }
   
   *, *::before, *::after {
@@ -12,24 +22,15 @@ html {
   ul {list-style-type: none;}
 
 body {
-    font-family: Verdana, sans-serif;
-    height: 200vh;
-    width: 90vw;
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "calculator"
-    "calendar";
-    /*grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 25% 25% 25% 25%;*/
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
   }
 
-  main {
-    height: 80%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
 
   header {
       grid-column: 2/4;
@@ -43,11 +44,11 @@ body {
     grid-column: 2/2;
     border: 1px solid #ccc;
     border-radius: 5px;
-    position: absolute;
     top: 50%;
     left: 50%;
-    /*transform: translate(-50%, -50%);*/
     width: 400px;
+    background-color: slategray;
+    box-shadow: var(--shadow);
     grid-area: calculator;
   }
 
@@ -65,7 +66,7 @@ body {
 
   button {
     height: 60px;
-    background-color: #fff;
+    background-color: var(--light);
     border-radius: 3px;
     border: 1px solid #c4c4c4;
     background-color: transparent;
@@ -117,14 +118,13 @@ body {
   }
 
   .calendar {
-      display: grid;
-      grid-column: 1/2;
       /*grid-template-columns: repeat(7, 1fr);
       grid-template-rows: repeat(6, 1fr);
       border: 10% solid #ccc;
       border-radius: 20%;*/
       width: 100%;
       height: 10%;
+      grid-area: calendar;
   }
   
 .month {
@@ -147,40 +147,44 @@ body {
 }
 
 /* Previous button inside month header */
-.month > .prev {
+.month > ul > .prev {
     float: left;
     padding-top: 10px;
   }
   
   /* Next button */
-  .month > .next {
+  .month > ul > .next {
     float: right;
     padding-top: 10px;
   }
   
   /* Weekdays (Mon-Sun) */
   .weekdays {
+    display: grid;
     margin: 0;
     padding: 10px 0;
     background-color:#ddd;
+    grid-template-columns: repeat(7, 1fr)
   }
   
-  .weekdays > li {
-    display: inline-block;
+  .weekdays li {
+    display: grid;
     width: 13.6%;
     /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
-    color: #666;
+    color: #777;
     text-align: center;
   }
   
   /* Days (1-31) */
   .days {
+    display: grid;
     padding: 10px 0;
     background: #eee;
     margin: 0;
+    grid-template-columns: repeat(7,1fr)
   }
   
-  .days > li {
+  .days li {
     list-style-type: none;
     display: inline-block;
     width: 13.6%;
@@ -193,8 +197,16 @@ body {
   }
   
   /* Highlight the "current" day */
-  .days > li > .active {
+  .days li .active {
     padding: 5px;
     background: #1abc9c;
     color: white !important
+  }
+
+  .middle-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+      'calendar calendar calculator'
+      'calendar calendar calculator';
   }
