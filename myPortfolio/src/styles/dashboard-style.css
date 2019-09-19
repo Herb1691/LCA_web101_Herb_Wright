@@ -23,7 +23,7 @@
   
   body {
       background: #ccc;
-      background-image: url("/myPortfolio/images/backgrounds/bluevectors.png");
+      background-image: url("../img/background/bluevectors.png");
       background-repeat: no-repeat;
       /* background-size: 100% 100%; */
       height: 100vh;
@@ -46,7 +46,7 @@
 
     .clock {
         display: grid;
-        background-image: url("/myPortfolio/images/backgrounds/colorsquarebkgrnd.png");
+        background-image: url("../img/background/colorsquarebkgrnd.png");
         top: 10%;
         left: 10%;
         /* transform: translateX(-50%) translateY(-50%); */
