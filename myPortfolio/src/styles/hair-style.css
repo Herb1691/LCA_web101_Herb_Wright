@@ -1,0 +1,336 @@
+/* CSS Variables */
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Navigation */
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+    background: var(--dark);
+    color: var(--light);
+}
+
+.starthere h1 {
+    font-family: fantasy;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.starthere p {
+    text-align: center;
+}
+
+/* Shave Container */
+.shave {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        'shaveShowcase shaveShowcase schedule'
+        'shaveShowcase shaveShowcase rates';
+}
+
+.shaveShowcase {
+    grid-area: shaveShowcase;
+    min-height: 400px;
+    background: url(../img/barberShopPage/barber2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.shaveShowcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light);
+    text-shadow: 2px 2px #333;
+}
+
+.shaveShowcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--light);
+    text-shadow: 2px 2px #333;
+}
+
+/* Shave Box */
+.shave-box {
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.shave-box .days {
+    font-size: 2.5rem;
+}
+
+.shave-box .price {
+    font-size: 2.5rem;
+}
+
+.schedule {
+    grid-area: schedule;
+}
+
+.rates {
+    grid-area: rates;
+}
+
+/* Haircut Container */
+.haircut {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        'cutShowcase cutShowcase schedule'
+        'cutShowcase cutShowcase rates';
+}
+
+.cutShowcase {
+    grid-area: cutShowcase;
+    min-height: 400px;
+    background: url(../img/barberShopPage/barber1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.cutShowcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light);
+    text-shadow: 2px 2px #333;
+}
+
+.cutShowcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--light);
+    text-shadow: 2px 2px #333;
+}
+
+/* Shave Box */
+.cut-box {
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.cut-box .days {
+    font-size: 2.5rem;
+}
+
+.cut-box .price {
+    font-size: 2.5rem;
+}
+
+/* Trim Container */
+.trim {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        'trimShowcase trimShowcase schedule'
+        'trimShowcase trimShowcase rates';
+}
+
+.trimShowcase {
+    grid-area: trimShowcase;
+    min-height: 400px;
+    background: url(../img/barberShopPage/barber5.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.trimShowcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light);
+    text-shadow: 2px 2px #333;
+}
+
+.trimShowcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--light);
+    text-shadow: 2px 2px #333;
+}
+
+/* Shave Box */
+.trim-box {
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.trim-box .days {
+    font-size: 2.5rem;
+}
+
+.trim-box .price {
+    font-size: 2.5rem;
+}
+
+/* Media Queries */
+@media(max-width: 700px) {
+    .shave {
+        grid-template-areas: 
+            'shaveShowcase shaveShowcase'
+            'schedule rates';
+    }
+
+    .shaveShowcase h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    .starthere {
+        grid-template-areas: 
+            'h1'
+            'p';
+    }
+
+    .haircut {
+        grid-template-areas: 
+            'cutShowcase cutShowcase'
+            'schedule rates';
+    }
+
+    .cutShowcase h1 {
+        font-size: 2.5rem;
+    }
+
+    .trim {
+        grid-template-areas: 
+            'trimShowcase trimShowcase'
+            'schedule rates';
+    }
+
+    .trimShowcase h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .shave {
+        grid-template-areas: 
+            'shaveShowcase'
+            'schedule'
+            'rates';
+    }
+
+    .shaveShowcase h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    .starthere {
+        grid-template-areas: 
+            'h1'
+            'p';
+    }
+
+    .haircut {
+        grid-template-areas: 
+            'cutShowcase'
+            'schedule'
+            'rates';
+    }
+
+    .cutShowcase h1 {
+        font-size: 2.5rem;
+    }
+
+    .trim {
+        grid-template-areas: 
+            'trimShowcase'
+            'schedule'
+            'rates';
+    }
+
+    .trimShowcase h1 {
+        font-size: 2.5rem;
+    }
+}
