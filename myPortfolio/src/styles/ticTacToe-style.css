@@ -1,0 +1,111 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.cell {
+    width: 200px;
+    height: 200px;
+    font-size: 200px;
+}
+
+#cellOne {
+    border-right: 4px solid;
+    border-bottom: 4px solid;
+}
+
+#cellOne:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+#cellTwo {
+    border-right: 4px solid;
+    border-bottom: 4px solid;
+}
+
+#cellTwo:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+#cellThree {
+    border-bottom: 4px solid;
+}
+
+#cellThree:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+.topRow {
+    display: grid;
+    grid-template-columns: repeat(3, 0.01fr);
+}
+
+#cellFour {
+    border-right: 4px solid;
+    border-bottom: 4px solid;
+}
+
+#cellFour:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+#cellFive {
+    border-right: 4px solid;
+    border-bottom: 4px solid;
+}
+
+#cellFive:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+#cellSix {
+    border-bottom: 4px solid;
+}
+
+#cellSix:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+.middleRow {
+    display: grid;
+    grid-template-columns: repeat(3, 0.01fr);
+}
+
+#cellSeven {
+    border-right: 4px solid;
+}
+
+#cellSeven:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+#cellEight {
+    border-right: 4px solid;
+}
+
+#cellEight:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+#cellNine {
+}
+
+#cellNine:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+.bottomRow {
+    display: grid;
+    grid-template-columns: repeat(3, 0.01fr);
+}
