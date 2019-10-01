@@ -5,7 +5,14 @@
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
+.wrapper {
+    display: grid;
+    padding-top: 200px;
+}
+
 .cell {
+    display: flex;
+    justify-content: center;
     width: 200px;
     height: 200px;
     font-size: 200px;
@@ -41,6 +48,8 @@
 }
 
 .topRow {
+    margin-right: auto;
+    margin-left: auto;
     display: grid;
     grid-template-columns: repeat(3, 0.01fr);
 }
@@ -75,6 +84,8 @@
 }
 
 .middleRow {
+    margin-right: auto;
+    margin-left: auto;
     display: grid;
     grid-template-columns: repeat(3, 0.01fr);
 }
@@ -106,6 +117,16 @@
 }
 
 .bottomRow {
+    margin-right: auto;
+    margin-left: auto;
     display: grid;
     grid-template-columns: repeat(3, 0.01fr);
+}
+
+@media(max-width: 600px) {
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 80px;
+    }
 }

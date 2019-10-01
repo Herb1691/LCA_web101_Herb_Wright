@@ -24,7 +24,7 @@ function placeMarker(ID) {
         checkForWin();
     }
 
-    if (winCondition == true) {
+    if (document.getElementById(ID).innerHTML !== null && winCondition == true) {
         alert(gameMarker+" is the winner!");
     }    
 }
