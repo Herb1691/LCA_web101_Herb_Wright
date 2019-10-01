@@ -115,4 +115,12 @@ function checkForWin() {
             winCondition = true;
             gameMarker = 'O';
     }
+
+    // else if (document.getElementById("cellOne").innerHTML !== null && document.getElementById("cellTwo").innerHTML !== null
+    // && document.getElementById("cellThree").innerHTML !== null  && document.getElementById("cellFour").innerHTML !== null
+    // && document.getElementById("cellFive").innerHTML !== null && document.getElementById("cellSix").innerHTML !== null
+    // && document.getElementById("cellSeven").innerHTML !== null && document.getElementById("cellEight").innerHTML !== null
+    // && document.getElementById("cellNine").innerHTML !== null  && winCondition === false) {
+    //     alert("Board Full!  No one wins!");
+    // }
 }
