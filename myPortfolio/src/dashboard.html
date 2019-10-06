@@ -18,9 +18,6 @@
                 </header>
             </section>
             <section class="middle-container">
-                <div class="clock">
-                    <p id="MyClockDisplay"></p>
-                </div>
                 <div class="calendar">
                     <div class="month"> 
                         <ul>
@@ -74,42 +71,59 @@
                         <li>31</li>
                     </ul>
                 </div>
-
+            <!--Middle Section Ends-->
+            </section>
+            <section class="bottom-container">
+                <div id="list-section">
+                    <h1 id="header">To-do list</h1>
+                    <ul class="ulTodo">
+                        <li class="todoitem">Buy movie tickets</li>
+                    </ul>
+                    <div id="newItemButton"><button href="#">new item</button></div>
+                    <form id="newItemForm">
+                        <input type="text" id="itemField" placeholder="Item" />
+                        <input type="submit" id="add" value="add" />
+                    </form>
+                </div>
+                <div class="clock">
+                    <p id="MyClockDisplay"></p>
+                </div>
                 <div class="calculator">
-
-                    <input type="text" class="calculator-screen" value="0" disabled />
+                    <input type="calcText" class="calculator-screen" value="0" disabled />
                     
                     <div class="calculator-keys">
                     
-                        <button type="button" class="operator" value="+">+</button>
-                        <button type="button" class="operator" value="-">-</button>
-                        <button type="button" class="operator" value="*">&times;</button>
-                        <button type="button" class="operator" value="/">&divide;</button>
+                        <button type="button" class="btn operator" value="+">+</button>
+                        <button type="button" class="btn operator" value="-">-</button>
+                        <button type="button" class="btn operator" value="*">&times;</button>
+                        <button type="button" class="btn operator" value="/">&divide;</button>
                     
-                        <button type="button" value="7">7</button>
-                        <button type="button" value="8">8</button>
-                        <button type="button" value="9">9</button>
-                    
-                    
-                        <button type="button" value="4">4</button>
-                        <button type="button" value="5">5</button>
-                        <button type="button" value="6">6</button>
+                        <button type="button" class="btn" value="7">7</button>
+                        <button type="button" class="btn" value="8">8</button>
+                        <button type="button" class="btn" value="9">9</button>
                     
                     
-                        <button type="button" value="1">1</button>
-                        <button type="button" value="2">2</button>
-                        <button type="button" value="3">3</button>
+                        <button type="button" class="btn" value="4">4</button>
+                        <button type="button" class="btn" value="5">5</button>
+                        <button type="button" class="btn" value="6">6</button>
                     
                     
-                        <button type="button" value="0">0</button>
-                        <button type="button" class="decimal" value=".">.</button>
-                        <button type="button" class="all-clear" value="all-clear">AC</button>
+                        <button type="button" class="btn" value="1">1</button>
+                        <button type="button" class="btn" value="2">2</button>
+                        <button type="button" class="btn" value="3">3</button>
                     
-                        <button type="button" class="equal-sign" value="=">=</button>
+                    
+                        <button type="button" class="btn" value="0">0</button>
+                        <button type="button" class="btn decimal" value=".">.</button>
+                        <button type="button" class="btn all-clear" value="all-clear">AC</button>
+                    
+                        <button type="button" class="btn equal-sign" value="=">=</button>
                     
                     </div>            
-                </div>
-            <!--Middle Section Ends-->
+                </div>    
+            <!-- Bottom Section Ends -->
+            <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+            <script src="../src/scripts/todo-script.js"></script>
             </section>
         <!-- Wrapper Ends -->
         </div>
