@@ -157,6 +157,69 @@
         grid-gap: 20px;
         padding: 20px;
     }
+
+    .tower {
+      grid-area: tower;
+    }
+
+    [data-row] {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 34px;
+      margin: 25px;
+      border: 1px solid lightgray;
+    }
+    
+    [data-row].red {
+      background-color: #f6c5c5;
+    }
+    
+    [data-row].yellow {
+      background-color: #ffffa9;
+    }
+    
+    [data-row].green {
+      background-color: #baf6ba;
+    }
+    
+    [data-row].blue {
+      background-color: #F0F8FF;
+    }
+
+    [data-row].white {
+      background-color: white;
+    }
+    
+    [data-color] {
+      width: 25px;
+      float: left;
+    }
+    
+    [data-color="blue"] {
+      height: 33px;
+      background-color: blue;
+    }
+    
+    [data-color="green"] {
+      height: 43px;
+      background-color: green;
+    }
+    
+    [data-color="red"] {
+      height: 53px;
+      background-color: red;
+    }
+    
+    [data-color="yellow"] {
+      height: 63px;
+      background-color: yellow;
+    }
+    
+    #announce-game-won {
+      font-size: 50px;
+      text-align: center;
+    }
   
     .calendar {
         /*grid-template-columns: repeat(7, 1fr);
@@ -255,9 +318,11 @@
     }
     
     #list-section h1 {
+      font-size: 20px;
       color: white;
       margin: 0px auto;
       padding: 20px;
+      text-shadow: 2px 2px #333;
     }
     
     .ulTodo {
@@ -323,8 +388,8 @@
       padding-top: 100px;
       grid-gap: 20px;
       grid-template-areas: 
-        'empty calendar calendar empty'
-        'empty calendar calendar empty';
+        'tower empty empty calendar'
+        'tower empty empty calendar';
     }
 
     .bottom-container {
@@ -341,7 +406,8 @@
     @media (max-width: 600px) {
         .middle-container {
             grid-template-areas: 
-                'calendar';
+              'tower'
+              'calendar';
         }
 
         .bottom-container {
