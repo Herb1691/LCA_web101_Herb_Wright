@@ -220,6 +220,14 @@
       font-size: 50px;
       text-align: center;
     }
+
+    #compass {
+      grid-area: compass;
+    }
+
+    #gpsLocation {
+      grid-area: gpsLocation;
+    }
   
     .calendar {
         /*grid-template-columns: repeat(7, 1fr);
@@ -388,8 +396,8 @@
       padding-top: 100px;
       grid-gap: 20px;
       grid-template-areas: 
-        'tower empty empty calendar'
-        'tower empty empty calendar';
+        'tower compass compass calendar'
+        'tower gpsLocation gpsLocation calendar';
     }
 
     .bottom-container {

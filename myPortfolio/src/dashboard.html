@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./styles/dashboard-style.css">
         <script src="./scripts/dashboard-script.js"></script>
+        <script src="./scripts/geoLocation.js" defer></script>
         <script src="https://kit.fontawesome.com/6165ebe4a3.js"></script>
         <title>Dashboard</title>
     </head>
@@ -29,6 +30,11 @@
                         <div data-color="green"></div>
                         <div data-color="blue"></div>
                     </div>
+                </div>
+                <div class="compassLocation">
+                    <p id="compass"></p>
+                    <center><p id="gpsLocation"></p></center>
+                    <center><button onclick="getLocation()">Get Location</button><button onclick="clearPosition()">Clear Position</button></center>
                 </div>
                 <div class="calendar">
                     <div class="month"> 
